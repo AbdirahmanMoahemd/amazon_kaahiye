@@ -7,7 +7,7 @@ const userRouter = require('./routes/user');
 
 //init server
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const db_url = "mongodb+srv://developerkaahiye:kaahiye1234@cluster0.vowdb.mongodb.net/flutter_ecommerce?retryWrites=true&w=majority"
 
 //middleware
